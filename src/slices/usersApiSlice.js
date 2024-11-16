@@ -1,6 +1,6 @@
 import { apiSlice } from './apiSlice';
 
-const BASE_URL = process.env.VITE_API_URL || "";
+const BASE_URL = import.meta.env.VITE_API_URL || "https://wp-backend-qbzw.onrender.com";
 const USERS_URL = `${BASE_URL}/api/users`;
 
 export const userApiSlice = apiSlice.injectEndpoints({
