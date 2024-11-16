@@ -1,5 +1,7 @@
 import {apiSlice} from "./apiSlice";
-const ORDER_URL = "/api/order";
+
+const BASE_URL = import.meta.env.VITE_API_URL || ""; // Fallback could cause empty base URL
+const ORDER_URL = `${BASE_URL}/api/order`;
 
 export const orderApiSlice = apiSlice.injectEndpoints({
     endpoints: (builder) => ({
