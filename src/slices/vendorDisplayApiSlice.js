@@ -1,5 +1,7 @@
 import { apiSlice } from "./apiSlice";
-const VENDOR_DISPLAY_URL = "/api/vendorDisplay";
+
+const BASE_URL = import.meta.env.VITE_API_URL || "";
+const VENDOR_DISPLAY_URL = `${BASE_URL}/api/vendorDisplay`;
 
 export const vendorDisplayApiSlice = apiSlice.injectEndpoints({
   endpoints: (builder) => ({
