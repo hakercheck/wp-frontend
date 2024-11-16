@@ -1,5 +1,7 @@
 import { apiSlice } from "./apiSlice";
-const GUESTS_URL = "/api/guests";
+
+const BASE_URL = import.meta.env.VITE_API_URL || "";
+const GUESTS_URL = `${BASE_URL}/api/guests`;
 
 export const guestApiSlice = apiSlice.injectEndpoints({
   endpoints: (builder) => ({
