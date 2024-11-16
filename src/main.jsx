@@ -34,6 +34,9 @@ import UpdateVendorDisplay from './screens/UpdateVendorDisplay.jsx';
 import UpdateVendorSelect from './screens/UpdateVendorSelect.jsx';
 import ClientDashboard from './screens/ClientDashboard.jsx';
 
+console.log("Environment Variables:", import.meta.env);
+console.log("API URL:", import.meta.env.VITE_API_URL);
+
 const router = createBrowserRouter(
   createRoutesFromElements(
     <Route path='/' element={<App />}>
