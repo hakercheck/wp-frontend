@@ -6,11 +6,5 @@ export default defineConfig({
   plugins: [react()],
   server: {
     port: 3000,
-    proxy: {
-      '/api': {
-        target: 'https://wp-backend-qbzw.onrender.com',
-        changeOrigin: true,
-      },
-    },
   },
 });

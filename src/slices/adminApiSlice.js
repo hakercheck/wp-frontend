@@ -1,6 +1,6 @@
 import { apiSlice } from "./apiSlice";
 
-const BASE_URL = import.meta.env.VITE_API_URL || "";
+const BASE_URL = import.meta.env.VITE_API_URL || "http://localhost:5000";
 const ADMIN_URL = `${BASE_URL}/api/admin`;
 
 export const adminApiSlice = apiSlice.injectEndpoints({
